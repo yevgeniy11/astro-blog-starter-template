@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "getmoresupplies": {
+      "type": "sse",
+      "url": "https://getmoresupplies.com/wp-json/mcp/mcp-adapter-default-server"
+    }
+  }
+}
