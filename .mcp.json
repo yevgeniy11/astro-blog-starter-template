@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "cloudbees": {
+            "command": "docker",
+            "args": [
+                "run", "--rm", "-i",
+                "--env", "CLOUDBEES_PERSONAL_ACCESS_TOKEN",
+                "cloudbees/unify-mcp-server:latest",
+                "stdio",
+                "--mode=unify",
+                "--organization-id=YOUR_ORG_ID"
+            ],
+            "env": {
+                "CLOUDBEES_PERSONAL_ACCESS_TOKEN": "YOUR_TOKEN_HERE"
+            }
+        }
+    }
+}
